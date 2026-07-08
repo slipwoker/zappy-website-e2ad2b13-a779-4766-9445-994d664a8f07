@@ -1,0 +1,88 @@
+# שיינא פרוצ'נסקי צלמת משפחות וילדים בסגנון לייף סטייל — Generative Engine Optimization Map
+
+> Shaina Pruchanski is a family and children photographer specializing in artistic and lifestyle photography. Her style is natural and candid, capturing genuine moments as they unfold. The desired website aesthetic is soft, delicate, and vintage-inspired — reflecting the warmth and timeless quality of her photographic work. The site should include a section to showcase her pricing.
+
+---
+
+## Pages
+
+### בית
+https://-e2ad2b13.zappy5.app
+לכידת רגעים טבעיים ומלאי אור בתמונות לייף סטייל רכות ווינטג&#39;. שיינא פרוצ&#39;נסקי מתמחה בצילומי משפחות וילדים אמנותיים. הזמיני עכשיו לזיכרון נצחי.
+
+### תיק עבודות
+https://-e2ad2b13.zappy5.app/portfolio
+צללי לתוך תיק עבודות של צילומי סטיל לייף ודיוקנאות משפחתיים שטופי אור. כל תמונה מספרת סיפור עדין ומרגש. גלי את ההשראה שלך עכשיו.
+
+### אודות
+https://-e2ad2b13.zappy5.app/about
+שיינא פרוצ&#39;נסקי מביאה גישה אמנותית וחמימה לצילומי משפחות, עם אהבה לסגנון מעודן ונוסטלגי. בואי לפגוש את הפנים שמאחורי הקסם ולהתחבר לסיפור שלה.
+
+### מחירון
+https://-e2ad2b13.zappy5.app/pricing
+מחירון שקוף לחבילות צילום לייף סטייל הכוללות צילומי שעת זהב מרהיבים. בחרי את המסלול המושלם עבור משפחתך והתחילי ליצור זיכרונות יקרי ערך עוד היום.
+
+### צור קשר
+https://-e2ad2b13.zappy5.app/contact
+מוכנה להנציח רגעים יקרים? צרי קשר עם שיינא פרוצ&#39;נסקי עוד היום לתאום צילומי לייף סטייל רכים ומלאי נשמה. החלום המשפחתי שלך מחכה להתגשם.
+
+### תודה שפנית אליי
+https://-e2ad2b13.zappy5.app/thank-you
+שיינא פרוצ'נסקי צלמת משפחות וילדים בסגנון לייף סטייל - תודה שפנית אליי
+
+## Legal & Policy
+
+### Privacy Policy
+https://-e2ad2b13.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-e2ad2b13.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-e2ad2b13.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://-e2ad2b13.zappy5.app/contact
+- Endpoint: https://-e2ad2b13.zappy5.app/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text)
+  - `email` (email)
+  - `phone` (tel)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About שיינא פרוצ'נסקי צלמת משפחות וילדים בסגנון לייף סטייל
+Shaina Pruchanski is a family and children photographer specializing in artistic and lifestyle photography. Her style is natural and candid, capturing genuine moments as they unfold. The desired website aesthetic is soft, delicate, and vintage-inspired — reflecting the warmth and timeless quality of her photographic work. The site should include a section to showcase her pricing.
+
+## Target Audience
+- משפחות וילדים
+- משפחות עם ילדים
+- הורים מצפים
+- הורים לתינוקות
+- בת מצווה
+
+## Industry
+Photography
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://-e2ad2b13.zappy5.app/sitemap.xml
+- Robots: https://-e2ad2b13.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://-e2ad2b13.zappy5.app/llms-full.txt

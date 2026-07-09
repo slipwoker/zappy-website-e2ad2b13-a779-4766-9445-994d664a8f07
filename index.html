@@ -257,9 +257,243 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  background-color: var(--bg-dark); /* Dark fallback for text contrast */
+  color: var(--text-light); /* Explicit text color on dark root */
+  direction: rtl;
+}
+
+/* Fullscreen Background Image */
+.index-hero-section .hero-bg-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Scrim Overlay for Text Legibility */
+.index-hero-section .hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(47, 41, 36, 0.15) 0%,
+    rgba(47, 41, 36, 0.05) 30%,
+    rgba(47, 41, 36, 0.25) 70%,
+    rgba(47, 41, 36, 0.48) 100%
+  );
+}
+
+/* Decorative Botanical Motif */
+.index-hero-section .hero-botanical-decoration {
+  position: absolute;
+  bottom: 100px;
+  inset-inline-start: 40px;
+  width: 180px;
+  height: 220px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.index-hero-section .hero-botanical-decoration svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Text Overlay Group */
+.index-hero-section .hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.index-hero-section .hero-text-wrapper {
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* H1 Headline */
+.index-hero-section .hero-headline {font-family: 'Frank Ruhl Libre', 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: var(--text-light);
+  margin: 0 0 24px 0;
+  text-align: center;
+  direction: rtl;}
+
+/* H3 Subtitle */
+.index-hero-section .hero-subtitle {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-light);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 40px auto;
+  max-width: 560px;
+  text-align: center;
+  direction: rtl;
+}
+
+/* CTA Group */
+.index-hero-section .hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Primary Button */
+.index-hero-section .hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #8B7355;
+  color: #FAF7F3;
+  padding: 14px 32px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(100, 80, 60, 0.25);
+  white-space: nowrap;
+}
+
+.index-hero-section .hero-btn-primary:hover {
+  background: #7A6449;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(100, 80, 60, 0.35);
+}
+
+/* Secondary Button */
+.index-hero-section .hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  color: var(--text-light);
+  padding: 14px 32px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(255, 252, 247, 0.5);
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.index-hero-section .hero-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+/* Bottom Divider Transition */
+.index-hero-section .hero-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.index-hero-section .hero-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .index-hero-section {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 100px; /* Clear sticky navbar */
+    padding-bottom: 80px; /* Space for divider */
+  }
+
+  .index-hero-section .hero-content {
+    padding: 0 20px;
+    align-items: flex-start;
+    padding-top: 60px;
+  }
+
+  .index-hero-section .hero-headline {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .index-hero-section .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+
+  .index-hero-section .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .index-hero-section .hero-btn-primary,
+  .index-hero-section .hero-btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .index-hero-section .hero-botanical-decoration {
+    width: 120px;
+    height: 160px;
+    bottom: 100px;
+    inset-inline-start: 10px;
+    opacity: 0.4;
+  }
+}
+/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
+.hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
+@media (max-width: 1024px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
+}
+@media (max-width: 768px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
+}
+
+/* ZAPPY_POSTGEN_GUARD_HERO_TYPO:בית-hero (index-hero) — stripped 1 jarring hero headline effect(s) */
+
+</style>
     <link rel="stylesheet" href="/styles.css">
     <script>window.ZAPPY_WEBSITE_ID = "e2ad2b13-a779-4766-9445-994d664a8f07"; window.ZAPPY_API_BASE = "https://api.zappy5.com";</script>
-    <link rel="preload" as="image" href="/assets/site-index-hero-image-1.webp" fetchpriority="high">
 
     <style id="zappy-dropdown-submenu-styles">
       /* ========== DESKTOP DROPDOWN SUBMENU STYLES ========== */
@@ -836,21 +1070,41 @@
 </script>
   
   <main id="main">
-    <section data-band-index="0" class="index-hero-section" data-layout-spec="בית-hero" data-hero-treatment="fade-bleed" style="--hero-fade-color: var(--bg-light);" data-hero-type="fullscreen-scrim">
-  <img loading="eager" fetchpriority="high" decoding="async" class="hero-fade-img" data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="A warm, sunlit lifestyle photograph of a mother sitting on a cream-colored linen sofa, gently laughing with her two young children who are climbing onto her lap. The scene is candid and filled with natural golden-hour light streaming through a large window. Composition places the subjects on the right side of the frame, leaving the left side softly blurred and out of focus. Shot with a shallow depth of field, vintage-inspired warm tones, soft film-like grain, editorial family photography style." width="1200" height="800" src="/assets/site-index-hero-image-1.webp" alt="צילום לייף סטייל משפחתי - אמא וילדים צוחקים יחד באור טבעי">
-  
-  <div class="hero-fade-content">
-    <h1 class="display-xl">רגעים אמיתיים.<br>זיכרונות שנשארים.</h1>
-    <h3>צילומי משפחות וילדים בסגנון טבעי ואומנותי, שתופסים בדיוק את מה שהלב מרגיש.</h3>
-    <div class="hero-cta-row">
-      <a href="/pricing" class="btn-primary">לצפייה במחירון</a>
-      <a href="/portfolio" class="btn-secondary">לגלריית התמונות</a>
+    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" data-zappy-section="true">
+  <!-- Fullscreen Background Image -->
+  <div class="hero-bg-image" style="background-image: url('assets/site-index-hero-image-1.webp'); background-size: cover; background-position: center;"></div>
+
+  <!-- Scrim Overlay for Text Legibility -->
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <!-- Decorative Botanical Motif -->
+  <div class="hero-botanical-decoration" aria-hidden="true">
+    <svg data-no-icon-edit="true" viewBox="0 0 180 220" xmlns="http://www.w3.org/2000/svg">
+      <path d="M90,220 Q85,180 70,150 Q55,120 40,100 Q25,80 15,60 Q5,40 10,20 Q15,5 25,10 Q35,15 30,30 Q25,45 35,60 Q45,75 55,90 Q65,105 75,120 Q85,135 90,150" fill="none" stroke="#C4A882" stroke-width="1.2" opacity="0.35"></path>
+      <path d="M90,220 Q95,180 110,150 Q125,120 140,100 Q155,80 165,60 Q175,40 170,20 Q165,5 155,10 Q145,15 150,30 Q155,45 145,60 Q135,75 125,90 Q115,105 105,120 Q95,135 90,150" fill="none" stroke="#C4A882" stroke-width="1.2" opacity="0.35"></path>
+      <ellipse cx="40" cy="80" rx="3" ry="5" fill="#C4A882" opacity="0.25" transform="rotate(-30 40 80)"></ellipse>
+      <ellipse cx="140" cy="80" rx="3" ry="5" fill="#C4A882" opacity="0.25" transform="rotate(30 140 80)"></ellipse>
+      <ellipse cx="30" cy="50" rx="2.5" ry="4" fill="#C4A882" opacity="0.2" transform="rotate(-45 30 50)"></ellipse>
+      <ellipse cx="150" cy="50" rx="2.5" ry="4" fill="#C4A882" opacity="0.2" transform="rotate(45 150 50)"></ellipse>
+    </svg>
+  </div>
+
+  <!-- Text Overlay Group -->
+  <div class="hero-content">
+    <div class="hero-text-wrapper">
+      <h1 class="hero-headline">רגעים אמיתיים.<br>זיכרונות שנשארים.</h1>
+      <h3 class="hero-subtitle">צילומי משפחות וילדים בסגנון טבעי ואומנותי, שתופסים בדיוק את מה שהלב מרגיש.</h3>
+      <div class="hero-cta-group">
+        <a href="/pricing" class="hero-btn-primary">לצפייה במחירון</a>
+        <a href="/portfolio" class="hero-btn-secondary">לגלריית התמונות</a>
+      </div>
     </div>
   </div>
 
-  <div class="index-hero-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 L0,35 Q40,30 80,38 T160,32 Q200,38 240,30 T320,35 Q360,30 400,38 T480,32 Q520,38 560,30 T640,35 Q680,30 720,38 T800,32 Q840,38 880,30 T960,35 Q1000,30 1040,38 T1120,32 Q1160,38 1200,35 L1200,80 Z" fill="#FAF7F3"></path>
+  <!-- Bottom Flat Divider Transition -->
+  <div class="hero-divider-wrapper" aria-hidden="true">
+    <svg data-no-icon-edit="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 L0,0 L1200,0 L1200,80 Z" fill="#FAF7F3"></path>
     </svg>
   </div>
 </section>

@@ -673,7 +673,6 @@ html:not([dir]) .whatsapp-float {
   /* If JS toggles .open class on #navMenu, it will be handled by post-processing */
 }
 
-
 /* ============================================
    NAVBAR LAYOUT - POST-GENERATION FIXES
    Structural layout only - colors from Claude
@@ -1811,7 +1810,6 @@ html[lang="ar"] .nav-cta-btn {
 /* Post-generation fix: Remove main element margin-top and padding-top */
 main:not(.courses-page-main) { margin-top: 0 !important; padding-top: 0 !important; }
 
-
 /* Footer Styles */
 /* =============================================
    FOOTER – Photography Website (Hebrew / RTL)
@@ -2145,8 +2143,6 @@ main:not(.courses-page-main) { margin-top: 0 !important; padding-top: 0 !importa
   border-radius: 2px;
 }
 
-
-
 /* V2 Decorative Helpers — quote marks */
 :root { --decorative-quote-color: var(--accent, #b48b59); --decorative-quote-font: var(--accent-font, var(--font-display, serif)); }
 blockquote::before, .quote::before, [data-quote]::before {
@@ -2229,189 +2225,6 @@ body { min-height: 100vh; display: flex; flex-direction: column; }
 main { flex: 1 0 auto; }
 .site-footer { flex-shrink: 0; }
 /* hero */
-.index-hero-section {
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background-color: var(--bg-light);
-  color: var(--text-dark);
-  padding-bottom: 80px;
-}
-
-.index-hero-section .hero-fade-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  mask-image: linear-gradient(to left, rgba(0,0,0,1) 40%, rgba(0,0,0,0.85) 58%, rgba(0,0,0,0) 72%);
-  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 40%, rgba(0,0,0,0.85) 58%, rgba(0,0,0,0) 72%);
-}
-
-.index-hero-section .hero-fade-content {
-  position: relative;
-  z-index: 10;
-  max-width: 520px;
-  width: 100%;
-  margin-inline-end: auto;
-  margin-inline-start: 0;
-  padding: 80px 40px 40px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  text-align: right;
-  background: linear-gradient(to left, var(--bg-light) 0%, rgba(255, 252, 247, 0.95) 30%, rgba(255, 252, 247, 0) 100%);
-  backdrop-filter: blur(0px);
-}
-
-.index-hero-section .display-xl {
-  font-family: 'Rubik', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
-  color: var(--text-dark);
-  margin: 0;
-}
-
-.index-hero-section h3 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.7;
-  color: var(--text-muted);
-  margin: 0;
-  max-width: 480px;
-}
-
-.index-hero-section .hero-cta-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 12px;
-  justify-content: flex-start;
-}
-
-.index-hero-section .btn-primary {
-  background: var(--primary);
-  color: var(--text-dark);
-  padding: 16px 32px;
-  border-radius: 6px;
-  border: 1.5px solid #C4A882;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  white-space: nowrap;
-}
-
-.index-hero-section .btn-primary:hover {
-  background: #F7F0E7;
-  border-color: #8B7355;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.14);
-  transform: translateY(-2px);
-}
-
-.index-hero-section .btn-secondary {
-  background: transparent;
-  color: #8B7355;
-  padding: 16px 32px;
-  border-radius: 6px;
-  border: 1.5px solid #D9C7AD;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.index-hero-section .btn-secondary:hover {
-  background: rgba(139, 115, 85, 0.05);
-  border-color: #8B7355;
-  color: #6B5A4A;
-  transform: translateY(-2px);
-}
-
-.index-hero-divider-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  pointer-events: none;
-  z-index: 5;
-}
-
-.index-hero-divider-wrapper svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 768px) {
-  .index-hero-section {
-    min-height: 100vh;
-    padding-top: 100px;
-    padding-bottom: 60px;
-    align-items: flex-start;
-  }
-
-  .index-hero-section .hero-fade-img {
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 85%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 85%);
-  }
-
-  .index-hero-section .hero-fade-content {
-    padding: 24px 20px 40px 20px;
-    margin-inline-end: 0;
-    margin-inline-start: 0;
-    max-width: 100%;
-    background: linear-gradient(to top, var(--bg-light) 0%, rgba(255, 252, 247, 0.9) 40%, rgba(255, 252, 247, 0) 100%);
-    text-align: center;
-    align-items: center;
-  }
-
-  .index-hero-section .display-xl {
-    font-size: 2.4rem;
-    line-height: 1.25;
-    text-align: center;
-  }
-
-  .index-hero-section h3 {
-    font-size: 1.1rem;
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .index-hero-section .hero-cta-row {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .index-hero-section .btn-primary,
-  .index-hero-section .btn-secondary {
-    padding: 14px 24px;
-    font-size: 0.9rem;
-    width: auto;
-    min-width: 160px;
-    justify-content: center;
-  }
-}
-/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
 .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
 @media (max-width: 1024px) {
   .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
@@ -2447,7 +2260,6 @@ main { flex: 1 0 auto; }
   [data-layout-spec="בית-hero"] { display: block !important; }
   [data-layout-spec="בית-hero"] .hero-fade-content { width: 100%; max-width: 100%; padding-inline: clamp(16px, 5vw, 24px) !important; }
 }
-
 
 /* introduction */
 .index-introduction-section {
@@ -3421,7 +3233,6 @@ main { flex: 1 0 auto; }
 }
 [data-layout-spec="תיק עבודות-gallery"] > header > * { margin-inline: auto !important; max-width: 100% !important; }
 
-
 /* categories */
 .portfolio-categories-section {
   background-color: #FAF7F3;
@@ -3773,7 +3584,6 @@ main { flex: 1 0 auto; }
     width: 70%;
   }
 }
-
 
 /* story */
 .about-story-section {
@@ -4381,7 +4191,6 @@ main { flex: 1 0 auto; }
 }
 /* ZAPPY_POSTGEN_GUARD_RTL_ORDER:אודות-details — stripped 4 order declaration(s) conflicting with RTL grid */
 
-
 /* personal-note */
 .about-personal-note-section {
   background: #FAF7F3;
@@ -4647,7 +4456,6 @@ main { flex: 1 0 auto; }
     font-size: 1.9rem;
   }
 }
-
 
 /* packages */
 .pricing-packages-section {
@@ -5247,7 +5055,6 @@ main { flex: 1 0 auto; }
   }
 }
 
-
 /* contact-intro */
 .contact-contact-intro-section {
   background-color: #FAF7F3;
@@ -5546,7 +5353,6 @@ main { flex: 1 0 auto; }
     font-size: 2.4rem;
   }
 }
-
 
 /* contact-form */
 .contact-contact-form-section {
@@ -6079,13 +5885,10 @@ main { flex: 1 0 auto; }
   }
 }
 
-
-
 /* Global font override - exclude icon fonts and special elements */
 *:not(.fas):not(.far):not(.fab):not(.fa):not([class*="fa-"]):not(.iconify):not([class*="icon"]):not(code):not(pre):not(i[class*="fa"]) {
   font-family: 'Rubik', sans-serif !important;
 }
-
 
 /* Logo size constraint - enforce max-height only */
 .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
@@ -6095,7 +5898,6 @@ main { flex: 1 0 auto; }
   object-fit: contain !important;
 }
 
-
 /* Footer contact alignment fix */
 .footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
 
@@ -6104,7 +5906,6 @@ html[dir="rtl"] .footer-contact li, html[dir="rtl"] .site-footer .footer-contact
 html[dir="rtl"] .footer-contact .contact-icon { order: 0 !important; }
 html[dir="rtl"] .footer-contact .contact-text { order: 1 !important; }
 html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
-
 
 /* ============================================
    MOBILE RESPONSIVE FIXES (Auto-generated)
@@ -6335,7 +6136,6 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 }
 
 /* END MOBILE RESPONSIVE FIXES */
-
 
 /* Legal Pages Content Styles */
 
@@ -6811,7 +6611,6 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   border: 0 !important;
 }
 
-
 /* Custom Accessibility Toolbar Styling - Zappy Style */
 
 /* Main button icon - ONLY target the floating button, not menu elements */
@@ -6962,6 +6761,242 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 ._access-icon {
   display: flex !important;
 }
+
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (בית-hero)
+   Added: 2026-07-09T07:02:19.720Z
+   ═══════════════════════════════════════════════════════════ */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  background-color: var(--bg-dark); /* Dark fallback for text contrast */
+  color: var(--text-light); /* Explicit text color on dark root */
+  direction: rtl;
+}
+
+/* Fullscreen Background Image */
+.index-hero-section .hero-bg-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Scrim Overlay for Text Legibility */
+.index-hero-section .hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(47, 41, 36, 0.15) 0%,
+    rgba(47, 41, 36, 0.05) 30%,
+    rgba(47, 41, 36, 0.25) 70%,
+    rgba(47, 41, 36, 0.48) 100%
+  );
+}
+
+/* Decorative Botanical Motif */
+.index-hero-section .hero-botanical-decoration {
+  position: absolute;
+  bottom: 100px;
+  inset-inline-start: 40px;
+  width: 180px;
+  height: 220px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.index-hero-section .hero-botanical-decoration svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Text Overlay Group */
+.index-hero-section .hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.index-hero-section .hero-text-wrapper {
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* H1 Headline */
+.index-hero-section .hero-headline {font-family: 'Frank Ruhl Libre', 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: var(--text-light);
+  margin: 0 0 24px 0;
+  text-align: center;
+  direction: rtl;}
+
+/* H3 Subtitle */
+.index-hero-section .hero-subtitle {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-light);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 40px auto;
+  max-width: 560px;
+  text-align: center;
+  direction: rtl;
+}
+
+/* CTA Group */
+.index-hero-section .hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Primary Button */
+.index-hero-section .hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #8B7355;
+  color: #FAF7F3;
+  padding: 14px 32px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(100, 80, 60, 0.25);
+  white-space: nowrap;
+}
+
+.index-hero-section .hero-btn-primary:hover {
+  background: #7A6449;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(100, 80, 60, 0.35);
+}
+
+/* Secondary Button */
+.index-hero-section .hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  color: var(--text-light);
+  padding: 14px 32px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(255, 252, 247, 0.5);
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.index-hero-section .hero-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+/* Bottom Divider Transition */
+.index-hero-section .hero-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.index-hero-section .hero-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .index-hero-section {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 100px; /* Clear sticky navbar */
+    padding-bottom: 80px; /* Space for divider */
+  }
+
+  .index-hero-section .hero-content {
+    padding: 0 20px;
+    align-items: flex-start;
+    padding-top: 60px;
+  }
+
+  .index-hero-section .hero-headline {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .index-hero-section .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+
+  .index-hero-section .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .index-hero-section .hero-btn-primary,
+  .index-hero-section .hero-btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .index-hero-section .hero-botanical-decoration {
+    width: 120px;
+    height: 160px;
+    bottom: 100px;
+    inset-inline-start: 10px;
+    opacity: 0.4;
+  }
+}
+/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
+.hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
+@media (max-width: 1024px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
+}
+@media (max-width: 768px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
+}
+
+/* ZAPPY_POSTGEN_GUARD_HERO_TYPO:בית-hero (index-hero) — stripped 1 jarring hero headline effect(s) */
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
